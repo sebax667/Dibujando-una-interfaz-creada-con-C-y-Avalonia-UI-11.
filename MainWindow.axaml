@@ -1,0 +1,58 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="MiPresentacion.MainWindow"
+        Title="Mi presentación"
+        Width="440"
+        Height="590"
+        MinWidth="360"
+        MinHeight="520"
+        WindowStartupLocation="CenterScreen">
+  <ScrollViewer>
+    <StackPanel Margin="28" Spacing="12">
+      <TextBlock Text="¡Vamos a presentarnos!"
+                 FontSize="26"
+                 FontWeight="Bold"
+                 TextWrapping="Wrap" />
+      <TextBlock Text="Completa tus datos y comparte un poco sobre ti."
+                 Opacity="0.75"
+                 TextWrapping="Wrap" />
+
+      <TextBlock Text="Nombre" />
+      <TextBox x:Name="NombreTextBox"
+               Watermark="Escribe tu nombre"
+               AutomationProperties.Name="Nombre" />
+
+      <TextBlock Text="Apellido" />
+      <TextBox x:Name="ApellidoTextBox"
+               Watermark="Escribe tu apellido"
+               AutomationProperties.Name="Apellido" />
+
+      <TextBlock Text="Edad" />
+      <TextBox x:Name="EdadTextBox"
+               Watermark="Escribe tu edad"
+               AutomationProperties.Name="Edad" />
+
+      <StackPanel Orientation="Horizontal" Spacing="10">
+        <Button Content="Presentarme"
+                Click="OnPresentarmeClick" />
+        <Button Content="Limpiar"
+                Click="OnLimpiarClick" />
+      </StackPanel>
+
+      <Button Content="Cambiar saludo"
+              HorizontalAlignment="Left"
+              Click="OnCambiarSaludoClick" />
+
+      <Border Padding="14"
+              MinHeight="76"
+              CornerRadius="6"
+              BorderThickness="1"
+              BorderBrush="{DynamicResource SystemControlForegroundBaseMediumBrush}">
+        <TextBlock x:Name="ResultadoTextBlock"
+                   Text="Tu presentación aparecerá aquí."
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Center" />
+      </Border>
+    </StackPanel>
+  </ScrollViewer>
+</Window>
