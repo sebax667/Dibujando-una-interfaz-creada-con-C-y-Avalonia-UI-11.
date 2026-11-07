@@ -58,16 +58,16 @@ MiPresentacion/
 ├── MiPresentacion.csproj# Archivo de proyecto y dependencias NuGet
 └── README.md            # Documentación del repositorio
 
-🧪 Casos de Prueba y Validaciones
+##🧪 Casos de Prueba y Validaciones
 Caso,Datos Introducidos,Resultado Esperado,Estado
-1,"Nombre, Apellido y Edad válidos",Muestra la presentación personalizada correctamente.,PASADO
-2,Nombre vacío,Muestra advertencia y enfoca el campo Nombre.,PASADO
-3,Apellido vacío,Muestra advertencia y enfoca el campo Apellido.,PASADO
-4,Edad con letras,Solicita un valor numérico entero válido.,PASADO
-5,Edad negativa o igual a 0,Rechaza el valor indicando que debe ser mayor a 0.,PASADO
-6,Presionar botón Limpiar,Restablece el formulario y vuelve el foco al Nombre.,PASADO
+-1,"Nombre, Apellido y Edad válidos",Muestra la presentación personalizada correctamente.,PASADO
+-2,Nombre vacío,Muestra advertencia y enfoca el campo Nombre.,PASADO
+-3,Apellido vacío,Muestra advertencia y enfoca el campo Apellido.,PASADO
+-4,Edad con letras,Solicita un valor numérico entero válido.,PASADO
+-5,Edad negativa o igual a 0,Rechaza el valor indicando que debe ser mayor a 0.,PASADO
+-6,Presionar botón Limpiar,Restablece el formulario y vuelve el foco al Nombre.,PASADO
 
-Pasos de Instalación
+##Pasos de Instalación
 Clonar el repositorio:
 
 Bash
@@ -82,10 +82,10 @@ Ejecutar la aplicación:
 Bash
 dotnet run
 
-🧠 Pregunta de Reflexión
+##🧠 Pregunta de Reflexión
 ¿Cuál es la función de MainWindow.axaml y MainWindow.axaml.cs, y cómo se relacionan mediante x:Name y los eventos Click para permitir que el usuario interactúe con la aplicación?
 
-Respuesta:
+##Respuesta:
 
 MainWindow.axaml actúa como la capa visual de la aplicación, donde se define la jerarquía de los elementos gráficos, disposiciones y colores mediante código de marcado XAML. MainWindow.axaml.cs constituye el código subyacente (code-behind) escrito en C#, donde reside la lógica para procesar datos, hacer validaciones y responder a la entrada del usuario.
 
